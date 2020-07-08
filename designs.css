@@ -8,8 +8,9 @@ body {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
+    width: 100%;
     color: #ffffff;
-    background-color: #364156
+    background-color: #2b2c2b
 }
 
 header {
@@ -57,41 +58,21 @@ nav a {
     text-decoration: none;
 }
 
-
-/*
-nav a:hover {
-    color: teal;
-}
-
-nav a::before {
-    content: " ";
-    display: block;
-    height: 4px;
-    background-color: #ffffff;
-    top: 10px;
-    width: 0%;
-}
-
-nav a:hover::before {
-    width: 100%;
-}
-*/
-
 .intro {
     /*border: thin #364156;*/
     /*background-color: #9481ff17;*/
     border-radius: 2px;
-    width: 70%;
+    width: 90%;
     height: 600px;
-    margin-left: 80px;
-    margin-right: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 10px 10px 10px 10px;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .awe {
     border: thin #364156;
-    background-color: #9481ff0e;
+    background-color: #9481ff02;
     border-radius: 2px;
     width: 90%;
     height: 600px;
@@ -108,7 +89,7 @@ nav a:hover::before {
 
 .button {
     border-width: thin;
-    border-color: #ffa62b;
+    border-color: #09BC8A;
     background-color: #ffffff00;
     border-radius: 8px;
     font-size: 14px;
@@ -189,8 +170,7 @@ td {
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid #ffa62b;
-    /* rgba(255, 255, 255, 0.5);*/
+    border: 1px solid #09BC8A;
     transform: scale(1.2, 1.2);
 }
 
@@ -204,5 +184,5 @@ img.rounded {
     border-radius: 50%;
     height: 400px;
     width: 400px;
-    margin-left: 380px;
+    float: right;
 }
