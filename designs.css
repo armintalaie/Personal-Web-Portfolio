@@ -6,11 +6,11 @@
 
 body {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     color: #ffffff;
     height: 100%;
-    background-image: repeating-linear-gradient(to bottom right, #034a8d, #0870d1 20%, #031e38);
+    background-image: repeating-linear-gradient(to bottom right, #2b567a, #305f86);
 }
 
 header {
@@ -180,9 +180,10 @@ td {
 
 .project {
     font-size: 14px;
-    background-color: #639fee;
+    background-color: #cddcdffb;
+    color: black;
     min-width: 4em;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
 }
