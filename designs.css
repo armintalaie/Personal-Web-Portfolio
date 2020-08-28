@@ -7,10 +7,10 @@
 body {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
     color: #ffffff;
-    background-color: #2b2c2b
+    height: 100%;
+    background-image: repeating-linear-gradient(to bottom right, #034a8d, #0870d1 20%, #031e38);
 }
 
 header {
@@ -59,25 +59,20 @@ nav a {
 }
 
 .intro {
-    /*border: thin #364156;*/
-    /*background-color: #9481ff17;*/
     border-radius: 2px;
     width: 90%;
-    height: 600px;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px 10px 10px 10px;
-    font-size: 21px;
+    margin-bottom: 5%;
+    font-size: 23px;
 }
 
 .awe {
     border: thin #364156;
-    background-color: #9481ff02;
     border-radius: 2px;
-    width: 90%;
-    height: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 3%;
+    margin-right: 4%;
     padding: 10px 10px 10px 10px;
     font-size: 22px;
 }
@@ -97,6 +92,7 @@ nav a {
     padding-right: 15px;
     margin: 10px;
     text-transform: capitalize;
+    text-decoration: none;
     color: #ffffff;
     font-weight: medium;
 }
@@ -112,6 +108,7 @@ td {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 10px 10px 10px 10px;
+    margin-left: -1%;
     background-color: #09BC8A;
     display: inline-block;
     border-radius: 2px;
@@ -148,8 +145,10 @@ td {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s;
@@ -179,10 +178,11 @@ td {
     transform: scale(1, 1);
 }
 
-img.rounded {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    float: right;
+.project {
+    font-size: 14px;
+    background-color: #639fee;
+    min-width: 4em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2em;
 }
