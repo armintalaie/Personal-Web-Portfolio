@@ -10,14 +10,14 @@ body {
     margin: 0 auto;
     color: #ffffff;
     height: 100%;
-    background-image: repeating-linear-gradient(to bottom right, #2b567a, #305f86);
+    background-image: repeating-linear-gradient(to bottom right, #3e5d77, #1b3142);
 }
 
 header {
     padding: 0%;
     margin: 0;
     width: 100%;
-    left: 50%;
+    align-items: center;
 }
 
 header::after {
@@ -27,16 +27,17 @@ header::after {
 }
 
 nav {
-    left: 50%;
+    left: 10%;
+    align-items: center;
 }
 
 nav ul {
     display: inline-block;
-    align-self: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
-    left: 50%;
+    left: 10%;
 }
 
 nav li {
@@ -72,7 +73,7 @@ nav a {
     border: thin #364156;
     border-radius: 2px;
     margin-left: 3%;
-    margin-right: 4%;
+    margin-right: 3%;
     padding: 10px 10px 10px 10px;
     font-size: 22px;
 }
@@ -130,7 +131,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #364156;
+    background-color: #455064;
     padding: 10px 10px 10px 10px;
 }
 
@@ -180,10 +181,40 @@ td {
 
 .project {
     font-size: 14px;
-    background-color: #cddcdffb;
+    background-color: #dddccf;
     color: black;
     min-width: 4em;
     border-radius: 5px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
+    margin: 10px;
+}
+
+.tag {
+    background-color: #09BC8A;
+    display: inline-flex;
+    font-weight: 900;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    margin: 0.3vw;
+    ;
+}
+
+.github-button {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #3b3838;
+    color: #f0f0f0;
+    border-radius: 3px;
+    border-style: none;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.flex .div {
+    margin: 46px;
 }
