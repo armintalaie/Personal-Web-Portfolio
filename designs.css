@@ -181,13 +181,14 @@ td {
 
 .project {
     font-size: 14px;
-    background-color: #dddccf;
+    background-color: #e4e4e4;
     color: black;
     min-width: 4em;
     border-radius: 5px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
     margin: 10px;
+    height: fit-content;
 }
 
 .tag {
