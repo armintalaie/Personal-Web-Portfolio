@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     color: #ffffff;
     height: 100%;
-    background-image: repeating-linear-gradient(to bottom right, #3e5d77, #1b3142);
+    background-image: repeating-linear-gradient(to top right, #16525e, #3ea3be);
 }
 
 header {
@@ -69,13 +69,63 @@ nav a {
     font-size: 23px;
 }
 
-.awe {
-    border: thin #364156;
-    border-radius: 2px;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: 10px 10px 10px 10px;
-    font-size: 22px;
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 730px));
+    justify-content: center;
+}
+
+.overlay {
+    position: relative;
+}
+
+.frosted {
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    margin: 15px;
+    background: linear-gradient(to bottom right, #185b88c4, rgba(145, 157, 161, 0.699));
+    display: flex;
+    flex-wrap: wrap;
+    background: blur(80px);
+}
+
+.brdr {
+    border-top-style: groove;
+    border-bottom-style: solid;
+}
+
+.purple {
+    border-color: #394aebb0;
+}
+
+.mint {
+    border-color: #09BC8A;
+}
+
+.project {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.education {
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    margin: 15px;
+    background: linear-gradient(to bottom right, rgba(34, 42, 158, 0.425), rgba(82, 108, 196, 0.39));
+    display: flex;
+    flex-wrap: wrap;
+    background: blur(40px);
+    border-color: #09BC8A;
+    border-left-style: groove;
+    border-right-style: groove;
+    justify-content: center;
 }
 
 .par {
@@ -104,15 +154,15 @@ td {
 }
 
 .headings {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 10px 10px 10px 10px;
     margin-left: -1%;
     background-color: #09BC8A;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -177,18 +227,6 @@ td {
 .btn-three:hover::after {
     opacity: 1;
     transform: scale(1, 1);
-}
-
-.project {
-    font-size: 14px;
-    background-color: #e4e4e4;
-    color: black;
-    min-width: 4em;
-    border-radius: 5px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 2em;
-    margin: 10px;
-    height: fit-content;
 }
 
 .tag {
