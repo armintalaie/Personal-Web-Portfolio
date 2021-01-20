@@ -10,7 +10,8 @@ body {
     margin: 0 auto;
     color: #ffffff;
     height: 100%;
-    background-image: repeating-linear-gradient(to top right, #16525e, #3ea3be);
+    background-image: repeating-linear-gradient(to top right, #3e5d77, #1b3142);
+    font-size: 4vw;
 }
 
 header {
@@ -71,7 +72,7 @@ nav a {
 
 .box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 730px));
+    grid-template-columns: repeat(auto-fit, min(max(400px, 50%), 750px));
     justify-content: center;
 }
 
@@ -82,10 +83,10 @@ nav a {
 .frosted {
     z-index: 1;
     border-radius: 5px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(2, 22, 41, 0.19);
     padding: 15px;
     margin: 15px;
-    background: linear-gradient(to bottom right, #185b88c4, rgba(145, 157, 161, 0.699));
+    background: linear-gradient(to bottom right, #4b85acc4, rgba(145, 157, 161, 0.699));
     display: flex;
     flex-wrap: wrap;
     background: blur(80px);
