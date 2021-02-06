@@ -1,0 +1,173 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #eae7dc;
+}
+
+header {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: #3500d3;
+    max-width: 80rem;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+button {
+    max-width: 80rem;
+    padding: 2rem 4rem;
+    margin: 10rem;
+    border: 0.3rem solid #3500d3;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    text-align: center;
+    background: none;
+    /*color: white;*/
+}
+
+li a {
+    border: 0.2rem solid #3500d3;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background: none;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3500d3;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav {
+    float: right;
+}
+
+.info {
+    margin: 3rem;
+    padding: 3rem;
+    border: 0.1rem solid #3500d3;
+}
+
+.gallery {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: "card1" "card2" "card3 card4";*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.full-gallery {
+    grid-column: 1/3;
+}
+
+.card-image {
+    height: 20rem;
+    padding: 3%;
+    margin: 2%;
+    float: right top;
+    background: none;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+
+.card {
+    width: minmax(400px, 700px);
+}
+
+.right-button {
+    float: right;
+}
+
+a {
+    border: 0.2rem solid #3500d3;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background: none;
+    text-decoration: none;
+}
+
+.title {
+    color: #3500d3;
+    width: 70%;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+}
+
+.full {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+ul {
+    align-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 1rem;
+    margin-right: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    width: fit-content;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+.project {
+    margin: 3rem;
+    padding: 3rem;
+    box-shadow: 4px 4px 20px #63635d;
+}
+
+.black {
+    border: 0.2rem solid #000000;
+}
