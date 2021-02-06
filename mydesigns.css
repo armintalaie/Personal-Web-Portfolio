@@ -56,6 +56,12 @@ a:visited {
     color: #3500d3;
 }
 
+a:hover {
+    color: #eae7dc;
+    font-size: 1.6rem;
+    background-color: #3500d3;
+}
+
 nav ul li {
     text-align: center;
     margin: 0.5rem;
@@ -72,7 +78,7 @@ nav {
 
 .info {
     margin: 3rem;
-    padding: 3rem;
+    padding: 5rem;
     border: 0.1rem solid #3500d3;
 }
 
@@ -170,4 +176,39 @@ h2 {
 
 .black {
     border: 0.2rem solid #000000;
+}
+
+.image {
+    width: 4rem;
+}
+
+p {
+    margin: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #91918c;
+    padding: 0.8rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.post {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.post img {
+    height: 25rem;
+    align-self: center;
+}
+
+.post h3 {
+    margin: 1rem;
+    color: #3500d3;
 }
