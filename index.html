@@ -11,58 +11,101 @@
     <link rel="icon" href="programmer.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mydesigns.css">
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">About me</a></li>
-                <li><a href="">Resume</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Selected Projects</a></li>
 
-            </ul>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="https://www.dropbox.com/s/ximsur9h8ah2uvd/Armin_Talaie_Resume.pdf?dl=0" target="_blank">Resume</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
 
-        </nav>
-    </header>
+        </ul>
 
+    </nav>
+
+
+    <!-- <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+-->
     <main>
-
-        <div class="info">
-            <h1>Hi! I'm Armin</h1>
-            <p>I'm a second-year Computer Science student at the <span class="bold">University of British
-                    Columbia</span>. I'm an aspiring software engineer, passionate about machine learning, full-stack development, data structures and algortithms.
-
+        <section class="know-more">
+            <p class="vertical-text">
+                Get to know me more:))
             </p>
-            <p>In my free time I like to work on cool projects, write articles on Medium and learn new technologies
-            </p>
+        </section>
+        <section class="page">
 
-            <section>
-                <nav>
-                    <ul>
-                        <li>
-                            <img class="image" src="icons/github.png" alt="">
-                        </li>
-                        <li>
-                            <img class="image" src="icons/linkedin.png" alt="">
-                        </li>
-                        <li>
-                            <img class="image" src="icons/email.png" alt="">
-                        </li>
-                        <li>
-                            <img class="image" src=" icons/medium.png" alt="">
-                        </li>
-                    </ul>
+            <section id="about" class="wrap">
 
-                </nav>
+
+                <section class="info">
+                    <section class="title-intro">
+                        <h1>Hi! I'm
+
+                        </h1>
+                        <span class="glitch">
+                            <h1>Armin</h1>
+                            <h1>Armin</h1>
+                            <h1>Armin</h1>
+
+                        </span>
+                    </section>
+
+
+                    <section class="wrap">
+                        <p>I'm a second-year Computer Science student at the <span class="bold">University of British
+                                Columbia</span>. I'm an aspiring software engineer, passionate about machine learning, full-stack development, data structures and algortithms.
+                        </p>
+                        <p>In my free time I like to work on cool projects, write articles on Medium and learn new technologies
+                        </p>
+
+                    </section>
+
+
+                    <section>
+
+                        <ul>
+                            <li>
+                                <a href="mailto:talaiearmin78@gmail.com">
+                                    <img class="image" src="icons/email.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/armin-talaie" target="_blank">
+                                    <img class="image" src="icons/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/armintalaie" target="_blank">
+                                    <img class="image" src="icons/github.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@armintalaie" target="_blank">
+                                    <img class="image" src=" icons/medium.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                </section>
             </section>
-        </div>
+        </section>
 
-
+        <!--
         <div class="info">
             <div class="full">
                 <span class="title">Education</span>
@@ -143,154 +186,201 @@
         </div>
 
 
+        <section class="section-header">
 
-        <section>
-            <div class="full">
-                <span class="title">Selected Projects</span>
+            <div class="block"></div>
+            <section style="display: flex;  overflow-wrap: break-word;">
+                <h1 id="projects" class="topic">Selected Projects</h1>
+            </section>
+        </section>
 
-            </div>
 
-            <section class="gallery">
-                <article class="project full-gallery ">
-                    <div class="full">
-                        <span class="title">Shelf</span>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="" class="right-button black">Github </a>
-                                </li>
-                                <li>
-                                    <a href="" class="right-button black">Website </a>
-                                </li>
-                            </ul>
-                        </nav>
 
-                    </div>
-                    <p> <span style="font-weight: bold; ">Description</span>
+        <section class="gallery">
+            <article class="project full-gallery ">
+                <div class="full">
+                    <span class="title">Shelf</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="right-button black">Github </a>
+                            </li>
+                            <li>
+                                <a href="" class="right-button black">Website </a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                        <p>Website, where visitors can browse for products and search for them. Visitors can sign up, and create their own products and upload photos for them. Users can set public, private status to their products to allow them to be visible
-                            on the home page or not.
-                        </p>
-                        <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
+                </div>
+                <p> <span style="font-weight: bold; ">Description</span>
 
-                            <p>I created an express app. I created user and product models using Mongoose and stored the on MongoDB. I utilized Passport.js to authenticate user and encrypt user passwords. I deployed the web app on Heroku.
-                            </p>
-                        </p>
-
-                        <p> <span style="font-weight: bold; ">Next Actions</span>
-
-                            <p>Moving forward, I want to optimize MongoDB access to fetch user products faster, implement machine learning on images to find similar products to a single product. Additionally, I want to implement Stripe's payment API for
-                                users to be able to buy/sell products.
-                            </p>
-                        </p>
-                </article>
-
-                <article class="project full-gallery ">
-                    <div class="full">
-                        <span class="title">Movie Recommender Web App</span>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="" class="right-button black">Github </a>
-                                </li>
-                                <li>
-                                    <a href="" class="right-button black">Website </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                    </div>
-
-                    <p> <span style="font-weight: bold; ">Description: </span>
-
-                        <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
+                    <p>Website, where visitors can browse for products and search for them. Visitors can sign up, and create their own products and upload photos for them. Users can set public, private status to their products to allow them to be visible
+                        on the home page or not.
                     </p>
-
                     <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
 
-                        <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate
-                            them or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched.
-                            Additionally, as the input data grows the suggestions become more accurate.</p>
-                    </p>
+                        <p>I created an express app. I created user and product models using Mongoose and stored the on MongoDB. I utilized Passport.js to authenticate user and encrypt user passwords. I deployed the web app on Heroku.
+                        </p>
                     </p>
 
-                    <p> <span style="font-weight: bold; ">User interface: </span>
+                    <p> <span style="font-weight: bold; ">Next Actions</span>
 
-                        <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
+                        <p>Moving forward, I want to optimize MongoDB access to fetch user products faster, implement machine learning on images to find similar products to a single product. Additionally, I want to implement Stripe's payment API for users
+                            to be able to buy/sell products.
+                        </p>
                     </p>
-                </article>
+            </article>
 
-                <article class="project full-gallery ">
-                    <div class="full">
-                        <span class="title">Website Portfolio</span>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="" class="right-button black">Github </a>
-                                </li>
-                                <li>
-                                    <a href="" class="right-button black">Website </a>
-                                </li>
-                            </ul>
-                        </nav>
+            <article class="project full-gallery ">
+                <div class="full">
+                    <span class="title">Movie Recommender Web App</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="right-button black">Github </a>
+                            </li>
+                            <li>
+                                <a href="" class="right-button black">Website </a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                    </div>
+                </div>
 
-                    <p> <span style="font-weight: bold; ">Description: </span>
+                <p> <span style="font-weight: bold; ">Description: </span>
 
-                        <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
-                    </p>
+                    <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
+                </p>
 
-                    <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
+                <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
 
-                        <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate
-                            them or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched.
-                            Additionally, as the input data grows the suggestions become more accurate.</p>
-                    </p>
-                    </p>
+                    <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate them
+                        or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched. Additionally,
+                        as the input data grows the suggestions become more accurate.</p>
+                </p>
+                </p>
 
-                    <p> <span style="font-weight: bold; ">User interface: </span>
+                <p> <span style="font-weight: bold; ">User interface: </span>
 
-                        <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
-                    </p>
-                </article>
+                    <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
+                </p>
+            </article>
 
-                <article class="project full-gallery ">
-                    <div class="full">
-                        <span class="title">Flashcard Application</span>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="" class="right-button black">Github </a>
-                                </li>
-                                <li>
-                                    <a href="" class="right-button black">Demo</a>
-                                </li>
-                            </ul>
-                        </nav>
+            <article class="project full-gallery ">
+                <div class="full">
+                    <span class="title">Website Portfolio</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="right-button black">Github </a>
+                            </li>
+                            <li>
+                                <a href="" class="right-button black">Website </a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                    </div>
+                </div>
 
-                    <p> <span style="font-weight: bold; ">Description: </span>
+                <p> <span style="font-weight: bold; ">Description: </span>
 
-                        <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
-                    </p>
+                    <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
+                </p>
 
-                    <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
+                <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
 
-                        <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate
-                            them or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched.
-                            Additionally, as the input data grows the suggestions become more accurate.</p>
-                    </p>
-                    </p>
+                    <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate them
+                        or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched. Additionally,
+                        as the input data grows the suggestions become more accurate.</p>
+                </p>
+                </p>
 
-                    <p> <span style="font-weight: bold; ">User interface: </span>
+                <p> <span style="font-weight: bold; ">User interface: </span>
 
-                        <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
-                    </p>
-                </article>
+                    <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
+                </p>
+            </article>
 
-                <article class="project full-gallery ">
+            <article class="project full-gallery ">
+                <div class="full">
+                    <span class="title">Flashcard Application</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="right-button black">Github </a>
+                            </li>
+                            <li>
+                                <a href="" class="right-button black">Demo</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <p> <span style="font-weight: bold; ">Description: </span>
+
+                    <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
+                </p>
+
+                <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
+
+                    <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate them
+                        or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched. Additionally,
+                        as the input data grows the suggestions become more accurate.</p>
+                </p>
+                </p>
+
+                <p> <span style="font-weight: bold; ">User interface: </span>
+
+                    <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
+                </p>
+            </article>
+
+            <article class="project full-gallery ">
+                <div class="full">
+                    <span class="title">Momentum</span>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="right-button black">Github </a>
+                            </li>
+                            <li>
+                                <a href="" class="right-button black">Devpost</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <p> <span style="font-weight: bold; ">Description: </span>
+
+                    <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
+                </p>
+
+                <p> <span style="font-weight: bold; ">Technical walkthrough:</span>
+
+                    <p>Logic: In Python I imported a dataset of movies and user ratings. Using pandas I applied data wrangling functionalities. I removed unneccasary data and shaped the data for user. I implmeneted the ability to search movies and rate them
+                        or get random movies to rate. Next, I analyzed the input and with Lenskit's machine learning libraries I find close neighbor matches. Finally, it outputs a list of movies that match the users erates that they haven't watched. Additionally,
+                        as the input data grows the suggestions become more accurate.</p>
+                </p>
+                </p>
+
+                <p> <span style="font-weight: bold; ">User interface: </span>
+
+                    <p>I created and designed a website using HTML, CSS and JavaScript. I then connected the logic to the interface with Django.</p>
+                </p>
+            </article>
+
+        </section>
+
+        <section class="info">
+            <h1 class="topic">What I'm listening to right now</h1>
+        </section>
+-->
+
+        <section class="gallery">
+            <!--
+                <article class="project full-gallery locked">
                     <div class="full">
                         <span class="title">Casper</span>
                         <nav>
@@ -309,7 +399,7 @@
 
                 </article>
 
-                <article class="project full-gallery ">
+                <article class="project full-gallery locked">
                     <div class="full">
                         <span class="title">Butter</span>
                         <nav>
@@ -324,7 +414,7 @@
                     </p>
                 </article>
 
-                <article class="project full-gallery ">
+                <article class="project full-gallery locked">
                     <div class="full">
                         <span class="title">Butter</span>
                         <nav>
@@ -339,7 +429,7 @@
                     </p>
                 </article>
 
-                <article class="project full-gallery ">
+                <article class="project full-gallery locked">
                     <div class="full">
                         <span class="title">Butter</span>
                         <nav>
@@ -353,13 +443,14 @@
                         <p>I'm a major movie buff and I always don't know what movie to watch. I though of doing this program to suggest me movies to watch based on my own personal taste..</p>
                     </p>
                 </article>
-
-            </section>
-
-
+  -->
         </section>
+
+
+
     </main>
 
+    <!--
     <section>
 
         <section class="info">
@@ -391,6 +482,8 @@
             </ul>
             <p></p>
         </section>
+-->
+    <!--
         <section class="info">
             <h2 class="title">
                 Appreciation of the month
@@ -418,40 +511,16 @@
 
             </article>
 
-            <article class="post">
-                <h3>April 2021</h3>
-                <img src="icons/github.png" alt="">
-                <h3>Cristina Conati</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit enim, nostrum voluptates consequatur reprehenderit deserunt sed vitae porro voluptate distinctio a cupiditate adipisci praesentium nam explicabo illum alias aliquid eius.</p>
-            </article>
-
-            <article class="post">
-                <h3>May 2021</h3>
-                <img src="icons/github.png" alt="">
-                <h3>Stefan Trifu</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit enim, nostrum voluptates consequatur reprehenderit deserunt sed vitae porro voluptate distinctio a cupiditate adipisci praesentium nam explicabo illum alias aliquid eius.</p>
-
-            </article>
-
-            <article class="post">
-                <h3>June 2021</h3>
-                <img src="icons/github.png" alt="">
-                <h3>Dave Ed</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit enim, nostrum voluptates consequatur reprehenderit deserunt sed vitae porro voluptate distinctio a cupiditate adipisci praesentium nam explicabo illum alias aliquid eius.</p>
-
-            </article>
-
-            <article class="post">
-                <h3>July 2021</h3>
-                <img src="icons/github.png" alt="">
-                <h3>Kalle Hallen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit enim, nostrum voluptates consequatur reprehenderit deserunt sed vitae porro voluptate distinctio a cupiditate adipisci praesentium nam explicabo illum alias aliquid eius.</p>
 
             </article>
         </section>
     </section>
 
+-->
 
+    <section class="page" id="page2">
+        <h1>Education</h1>
+    </section>
 
     <footer>
 
@@ -462,7 +531,21 @@
 
             </li>
         </ul>
+
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
 </body>
 
