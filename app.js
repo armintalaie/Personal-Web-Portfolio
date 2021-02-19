@@ -1,74 +1,58 @@
 /*var info = document.querySelectorAll(".info");
 var nav = document.querySelector("#navbar");
-
-var tl = new TimelineMax();
-
-tl.fromTo(
-    $(".slider"),
-    0.5, { margin: "0" }, { margin: "100rem", ease: Power2.easeInOut }
-);
-
-var scene1 = new ScrollMagic.Scene({
-    triggerElement: $(".slider"), // starting scene, when reaching this element
-    //duration: 400, // pin the element for a total of 400px
-});
-scene1.setTween(tl);
-scene1.addIndicators();
-scene1.addTo(controller);
-
+*/
 var controller = new ScrollMagic.Controller();
-var i = 1;
-$(".info").each(function() {
-    console.log(i);
 
-    i++;
-    if (i > 0) {
-        var tl = new TimelineMax();
+$(".start").each(function() {
+    var tl3 = new TimelineMax();
 
-        tl.fromTo(
-            $(this),
-            0.5, { margin: "0" }, { margin: "4rem", ease: Power2.easeInOut }
-        );
+    tl3.fromTo(
+        this,
+        0.8, { transform: "translateX(-100%)" }, { transform: "translateX(0)", ease: Power2.easeInOut }
+    );
+});
 
-        tl.fromTo(
-            $(this).children(),
-            0.5, { fontSize: "1rem" }, { fontSize: "10rem", ease: Power2.easeInOut },
-            "-=0.5"
-        );
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this, // starting scene, when reaching this element
-            //duration: 400, // pin the element for a total of 400px
-        });
-        scene.setTween(tl);
-        scene.addIndicators();
-        scene.addTo(controller);
-    }
+$("#navbar").each(function() {
+    var tl3 = new TimelineMax();
+    tl3.fromTo(
+        this,
+        0.8, { transform: "translateY(-300%)" }, { transform: "translateY(0)", ease: Power2.easeInOut }
+    );
 });
 
 $(".project").each(function() {
-    console.log(i);
+    var tl = new TimelineMax();
 
-    i++;
-    if (i > 0) {
-        var tl = new TimelineMax();
+    var scene = new ScrollMagic.Scene({
+        triggerElement: this, // starting scene, when reaching this element
+        duration: 200, // pin the element for a total of 400px
+    });
+    tl.fromTo(
+        $(this),
+        0.8, { opacity: "0" }, { opacity: "1", ease: Power2.easeInOut }
+    );
+    //tl.to($(this), 0.5, { backgroundColor: "#fdc7b0" }, "-=1.5");
 
-        tl.to($(this), 1, { padding: "5rem", ease: Power2.easeInOut });
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this, // starting scene, when reaching this element
-            //duration: 400, // pin the element for a total of 400px
-        });
-        tl.fromTo($(this), 0.5, { opacity: "0.3" }, { opacity: "1" }, "-=1");
-        //tl.to($(this), 0.5, { backgroundColor: "#fdc7b0" }, "-=1.5");
-
-        scene.setTween(tl);
-        scene.addIndicators();
-        scene.addTo(controller);
-    }
+    scene.setTween(tl);
+    scene.addTo(controller);
 });
 
-function start() {
-    info.forEach((part, index) => {});
-}*/
+var is_dark = localStorage.getItem("is_dark");
+console.log(localStorage.getItem("is_dark"));
+
+if ("true" == localStorage.getItem("is_dark")) {
+    console.log("is dark");
+    $("body").addClass("dark-theme");
+    $(".mode-switch").text("Dark Mode: ON");
+    $(".mode-switch").addClass("dark");
+    $(".mode-switch").removeClass("light");
+} else {
+    console.log("is not dark");
+    $(".mode-switch").text("Dark Mode: OFF");
+    $("body").removeClass("dark-theme");
+    $(".mode-switch").removeClass("dark");
+    $(".mode-switch").addClass("light");
+}
 
 let glitches = document.querySelectorAll(".glitch");
 
@@ -80,6 +64,7 @@ var words = [
     "Armin",
     "A Software developer",
     "A Full-stack developer",
+    "A machine learning enthusiast",
     "A student",
     "A programmer",
 ];
@@ -87,7 +72,6 @@ var words = [
 var current = 0;
 
 function change_text() {
-    console.log("UMMM");
     if (current >= words.length) current = 0;
     $(".glitch")
         .children()
@@ -95,16 +79,33 @@ function change_text() {
             $(this).text(words[current]);
 
             if (words[current] == "Armin") {
-                $(this).css({
-                    color: "#000000",
-                });
+                $(this).css({});
             } else {
-                $(this).css({
-                    color: "#000000",
-                });
+                $(this).css({});
             }
         });
     current++;
 }
 
 time.to(glitches, 2, {}).call(change_text, []);
+
+$(".mode-switch").on("click", function() {
+    if (is_dark == "true") {
+        $("body").removeClass("dark-theme");
+        $(".mode-switch").text("Dark Mode: OFF");
+
+        $(".mode-switch").removeClass("dark");
+        $(".mode-switch").addClass("light");
+        is_dark = "false";
+    } else {
+        $("body").addClass("dark-theme");
+        $(".mode-switch").text("Dark Mode: ON");
+        $(".mode-switch").addClass("dark");
+        $(".mode-switch").removeClass("light");
+
+        is_dark = "true";
+    }
+    localStorage.removeItem("is_dark");
+    localStorage.setItem("is_dark", is_dark);
+    console.log(localStorage.getItem("is_dark"));
+});

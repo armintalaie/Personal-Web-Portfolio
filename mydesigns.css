@@ -13,15 +13,22 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 0;
     color: #000000;
+    background: linear-gradient(to bottom right, #ffffff, #ecebeb);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.dark-theme {
+    color: #eee;
+    background: linear-gradient(to bottom right, #3d3c3c, #383434);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 html,
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom right, #ffffff, #ecebeb);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .slider {
@@ -54,16 +61,47 @@ main {
 /* Default elements ---------- */
 
 .heading {
-    font-size: 4rem;
-    padding-left: 1%;
+    padding-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-    color: #000000;
-    font-weight: 700;
+    font-weight: bolder;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 
 /* NAVIGATION BAR ------------------*/
+
+.mode-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 0.5%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: thin;
+    font-style: italic;
+}
+
+.mode-switch.dark {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #ffffff25, #ecebeb21);
+}
+
+.mode-switch.light {
+    color: #000000;
+    background: linear-gradient(to bottom right, #3d3c3c5e, #38343428);
+}
+
+.mode-switch:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 
 /* Navigation Bar */
@@ -99,7 +137,7 @@ header {
     flex-wrap: wrap;
     text-align: center;
     padding: 1rem;
-    box-shadow: 4px 4px 10px #83837c;
+    box-shadow: 4px 4px 10px #353532;
 }
 
 #navbar a {
@@ -135,10 +173,8 @@ header {
 }
 
 .start h1 {
-    color: #000000;
     font-weight: bolder;
     font-size: 6rem;
-    margin-bottom: 3rem;
 }
 
 .start section {
@@ -152,7 +188,7 @@ header {
     flex-wrap: wrap;
     justify-items: center;
     max-width: 100vw;
-    margin-bottom: 5%;
+    margin-bottom: 10rem;
 }
 
 .wrap section.wrap {
@@ -163,7 +199,6 @@ header {
 /* INFORMATION SECTIONS */
 
 .inline h1 {
-    color: #000000;
     font-weight: bolder;
     font-size: 5rem;
     justify-content: center;
@@ -310,7 +345,7 @@ li {
 .header-img img {
     height: 350px;
     z-index: 2;
-    box-shadow: 4px 4px 20px #5a5a55d0;
+    box-shadow: 4px 4px 10px #3535328a;
     border-radius: 0.3rem;
 }
 
@@ -336,6 +371,7 @@ color-block {
     margin: 2%;
     text-align: left;
     max-width: 600px;
+    position: relative;
 }
 
 .project-title p {
@@ -367,21 +403,23 @@ color-block {
     border-radius: 3rem;
 }
 
-.project-title button {
+.project button {
     border-style: none;
-    background: linear-gradient(to top right, #2d545e, #3f7380);
+    background-color: #082e38d5;
     color: #ffffff;
-    font-size: 1.5rem;
-    margin: 1rem;
-    padding: 0.4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    margin: 1%;
+    margin-right: 5%;
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 0.3rem;
     right: 0;
     bottom: 0;
     z-index: 5;
     position: absolute;
-    box-shadow: 1px 1px 5px #5a5a55d0;
+    box-shadow: 2px 2px 3px #222221d0;
 }
 
 .project.each {
@@ -416,10 +454,6 @@ a img {
     flex: 1 1 40rem;
 }
 
-.black {
-    border: 0.2rem solid #000000;
-}
-
 p {
     margin: 0.8rem;
     font-size: 1.5rem;
@@ -432,34 +466,12 @@ p {
     width: 100%;
 }
 
-.post h3 {
-    margin: 1rem;
-    color: #3500d3;
-}
-
 
 /* Text and Heading Designs */
-
-.block {
-    position: absolute;
-    height: 4rem;
-    background-color: #0006ff;
-    width: 35rem;
-    z-index: -1;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-}
 
 .section-header {
     position: relative;
     padding-bottom: 4rem;
-}
-
-
-/* Project design */
-
-.full-section h1 {
-    color: #000000;
 }
 
 
@@ -492,7 +504,6 @@ ul li {
 .inline a {
     border-style: none;
     background: linear-gradient(to top right, #2d545e, #3f7380);
-    color: #ffffff;
     font-size: 1.3rem;
     margin: 3rem;
     padding: 0.4rem;
@@ -503,6 +514,7 @@ ul li {
 }
 
 .inline a:visited {
+    text-decoration: none;
     color: #ffffff;
 }
 
@@ -513,16 +525,16 @@ a {
     background: none;
     text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
 }
 
 a:visited {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 a:hover {
-    color: #000000;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
@@ -620,60 +632,16 @@ a:hover {
     writing-mode: vertical-rl;
 }
 
-.ocean {
-    height: 10%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #015871;
+.info-content ul li {
+    display: list-item;
+    list-style-type: square;
 }
 
-.wave {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-    position: absolute;
-    top: -198px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
+.info-content ul {
+    list-style-type: decimal;
 }
 
-.wave:nth-of-type(2) {
-    top: -175px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
-}
-
-@keyframes wave {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: -1600px;
-    }
-}
-
-@keyframes swell {
-    0%,
-    100% {
-        transform: translate3d(0, -25px, 0);
-    }
-    50% {
-        transform: translate3d(0, 5px, 0);
-    }
-}
-
-
-/*
-@media screen and (max-width: 600px) {
-    html {
-        font-size: 32.5%;
-    }
-}
-*/
-
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 800px) {
     .project {
         flex-direction: column;
         margin-left: 0;
@@ -697,6 +665,7 @@ a:hover {
         width: 100vw;
         padding: 0;
         margin: 0;
+        margin-top: 7%;
     }
     #navbar ul {
         background: none;
