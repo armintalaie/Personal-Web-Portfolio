@@ -8,14 +8,12 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+       <div></div>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
+      <Link to="/" >
+       Main Page
       </Link>
     )
   }
