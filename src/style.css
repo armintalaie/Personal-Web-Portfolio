@@ -502,7 +502,7 @@ nav {
 }
 
 .social a img {
-    max-width: var(--maxWidth-icon);
+    width: var(--maxWidth-icon);
 }
 
 .mainbtn {
