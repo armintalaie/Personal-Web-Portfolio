@@ -3,7 +3,7 @@ import React from "react"
 export default function Navbar() {
   return (
     <nav>
-      <a href="https://www.dropbox.com/s/4ks88bidjuievz8/Armin_Talaie_Resume.pdf?dl=1">
+      <a href="https://www.dropbox.com/s/4ks88bidjuievz8/Armin_Talaie_Resume.pdf?dl=0">
         {" "}
         Resume{" "}
       </a>

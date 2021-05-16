@@ -388,6 +388,7 @@ a {
     justify-content: space-between;
     margin-bottom: 4rem;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .img-container div {
@@ -442,19 +443,21 @@ a {
     padding: 1rem;
     color: #ffffff;
     border-radius: 1rem;
-    transition: 0.5s ease-in-out;
     transition: 0.8s;
-    overflow: hidden;
+    transition: width 0.5s ease-in-out;
     width: 3rem;
     height: 2rem;
+    overflow: hidden;
     color: transparent;
     font-size: 1.2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .bonus:hover {
     width: 100%;
+    overflow: hidden;
     height: fit-content;
+    max-height: 9rem;
     color: #ffffff;
     background: linear-gradient(to right, #6e85cf, #4365d3);
 }
@@ -638,4 +641,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#sideline {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #6e85cf;
 }

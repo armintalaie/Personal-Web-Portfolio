@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
       <h1 className="header-h"> Hi! My name is Armin </h1>{" "}
       <p className="header-p">
         I'm a Computer Science student at the University of British Columbia.
-        I'm a developer and designer. In my free time, I like to play games,
+        I'm a developer and designer. In my free time, I like to play video games,
         draw and binge watch shows.
       </p>{" "}
       <Navbar />

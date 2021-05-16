@@ -18,7 +18,7 @@ export default function About() {
       />{" "}
       <p className="bonus">
         It took me some time to figure out what I want and get a hang of
-        Computer Science.If you wanto chat about itm shoot me an email{" "}
+        Computer Science. If you want to chat about it, shoot me an email{" "}
       </p>{" "}
     </div>
   )

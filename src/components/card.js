@@ -4,6 +4,7 @@ export default function Card(props) {
   return (
     <div className="img-container">
       <div>
+        
         <h4> {props.title} </h4>
         <h5>{props.loc}</h5>
         <p className="date"> {props.date} </p>

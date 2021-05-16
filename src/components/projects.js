@@ -28,6 +28,8 @@ export default function Projects({ posts }) {
                 </h4>
 
                 <p>{description}</p>
+                
+
               </div>
             </div>
            

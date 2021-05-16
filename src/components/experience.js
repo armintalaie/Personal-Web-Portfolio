@@ -5,8 +5,8 @@ export default function Experience() {
   const teaching = [
     "CPSC 221: Basic Data Structures and Algorithms",
     "CPSC 121:  Models of Computation",
-    "Assist the course instructors and team and conduct labs, tutorials",
-    "Help students fully understand the fundamentals of course materials",
+    "Led 25+ labs surrounding applying data structures and algorithms in C++",
+    "Supported 450+ students in multiple classes in the fundamentals of data structures and logic",
   ]
   const jumpstart = [
     "Organized virtual activities and events for orientation week",
@@ -31,7 +31,7 @@ export default function Experience() {
       <p className="bonus">
         Being a teaching assistant was one of the most gratifying jobs I 've
         had. To get a chance to work with your professors and also get a glimse
-        into behind the scenes.If you 're curious about it, I say give it try.{" "}
+        into behind the scenes. If you're curious about it, I say give it try.{" "}
       </p>{" "}
       <Card
         title="App Developer"
